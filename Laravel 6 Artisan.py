@@ -4,12 +4,13 @@ import subprocess
 import sublime
 import sublime_plugin
 
-class Laravel5ArtisanCommand(sublime_plugin.WindowCommand):
+class Laravel6ArtisanCommand(sublime_plugin.WindowCommand):
     def __init__(self, *args, **kwargs):
-        super(Laravel5ArtisanCommand, self).__init__(*args, **kwargs)
-        settings = sublime.load_settings('Laravel 5 Artisan.sublime-settings')
+        super(Laravel6ArtisanCommand, self).__init__(*args, **kwargs)
+        settings = sublime.load_settings('Laravel 6 Artisan.sublime-settings')
         self.php_path = settings.get('php_path')
         self.artisan_path = settings.get('artisan_path')
+        self.file_permissions = settings.get('file_permissions')
 
     def run(self, *args, **kwargs):
         try:
@@ -20,10 +21,13 @@ class Laravel5ArtisanCommand(sublime_plugin.WindowCommand):
 
             if os.path.isfile("%s" % artisan_path):
                 self.command = kwargs.get('command', None)
+                self.command_sublime = kwargs.get('command_sublime', False)
                 self.fill_in_accept = kwargs.get('fill_in', False)
                 self.fill_in_label = kwargs.get('fill_in_lable', 'Enter the resource name')
                 self.fields_accept = kwargs.get('fields', False)
                 self.fields_label = kwargs.get('fields_label', 'Enter the fields')
+                self.contents = kwargs.get('contents', '')
+                self.dir = kwargs.get('dir', '')
                 self.args = [self.php_path, artisan_path]
                 if self.command is None:
                     self.window.show_input_panel('Command name w/o args:', '', self.on_command_custom, None, None)
@@ -47,6 +51,10 @@ class Laravel5ArtisanCommand(sublime_plugin.WindowCommand):
 
         if self.fields_accept is True:
             self.window.show_input_panel(self.fields_label, "", self.on_fields, None, None)
+
+        elif self.command_sublime is True:
+            self.on_sublime_done(fill_in)
+
         else:
             self.on_done()
 
@@ -66,10 +74,24 @@ class Laravel5ArtisanCommand(sublime_plugin.WindowCommand):
     def on_done(self):
         if os.name != 'posix':
             self.args = subprocess.list2cmdline(self.args)
+
         try:
             self.window.run_command("exec", {
                 "cmd": self.args,
                 "shell": os.name == 'nt',
                 "working_dir": self.PROJECT_PATH})
+
+        except IOError:
+            sublime.status_message('IOError - command aborted')
+
+    def on_sublime_done(self, name):
+        if os.name != 'posix':
+            self.args = subprocess.list2cmdline(self.args)
+
+        try:
+            self.window.run_command( self.command, {
+                "file": self.PROJECT_PATH + self.dir + name + ".php",
+                "contents": self.contents.replace('%name', name, 1) })
+
         except IOError:
             sublime.status_message('IOError - command aborted')

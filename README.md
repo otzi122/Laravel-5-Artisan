@@ -1,4 +1,4 @@
-Laravel 5 Artisan commands
+Laravel 6 Artisan commands
 ===============
 
 Fork of Sublime Text plugin for Laravel 4 Artisan commands

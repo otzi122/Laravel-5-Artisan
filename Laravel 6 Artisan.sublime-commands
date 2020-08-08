@@ -1,0 +1,239 @@
+[
+    {
+        "caption": "Laravel: Clear",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "optimize:clear"
+        }
+    },
+    {
+        "caption": "Laravel: Make Trait",
+        "command": "laravel6_artisan",
+        "args": {
+        	"fill_in": true,
+            "fill_in_lable": "Enter Trait Name",
+            "command_sublime": true,
+        	"command": "open_file",
+            "contents": "<?php\nnamespace App\\Traits;\n\ntrait %name\n{\n}",
+            "dir": "/app/Traits/"
+        }
+    },
+    {
+        "caption": "Laravel: Make Auth",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:auth",
+            "fill_in": true,
+            "fill_in_lable": "Enter make:auth options (optional)"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Channel",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:channel",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the channel class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Command",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:command",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the command class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Controller",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:controller",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the controller class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Event",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:event",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the event class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Exception",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:exception",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the exception class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Factory",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:factory",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the factory class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Job",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:job",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the job class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Listener",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:listener",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the listener class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Mail",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:mail",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the mailable class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Middleware",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:middleware",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the middleware class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Migration",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:migration",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the migration"
+        }
+    },
+    {
+        "caption": "Laravel Generate 5: Make a Migration:Schema",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:migration:schema",
+            "fill_in": true,
+            "fill_in_lable": "Enter the Migration Name",
+            "fields": true,
+            "fields_label": "Table fields in the column:type format"
+        }
+    },
+    {
+        "caption": "Laravel Generate 5: Make a Migration:Pivot",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:migration:pivot",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the first table and of the second table separated by a space"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Model",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:model",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the model"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Notification",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:notification",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the notification class"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Observer",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:observer",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the observer class"
+        }
+    },
+    {
+        "caption": "Laravel: Make Policy",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:policy",
+            "fill_in": true,
+            "fill_in_lable": "Enter the Policy name"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Provider",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:provider",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the provider"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Request",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:request",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the request"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Resource",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:resource",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the resource"
+        }
+    },
+    {
+        "caption": "Laravel: Make Rule",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:rule",
+            "fill_in": true,
+            "fill_in_lable": "Enter the rule name"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Seeder",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:seeder",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the seeder"
+        }
+    },
+    {
+        "caption": "Laravel: Make a Test",
+        "command": "laravel6_artisan",
+        "args": {
+            "command": "make:test",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of the test"
+        }
+    },
+]
