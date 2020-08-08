@@ -236,4 +236,291 @@
             "fill_in_lable": "Enter the name of the test"
         }
     },
+    {
+        "caption": "Laravel: Down",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "down"
+        }
+    },
+    {
+        "caption": "Laravel: Help",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "help",
+            "fill_in": true,
+            "fill_in_lable": "Enter the command you need help with"
+        }
+    },
+    {
+        "caption": "Laravel: List",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "list"
+        }
+    },
+    {
+        "caption": "Laravel: Migrate",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "migrate"
+        }
+    },
+    {
+        "caption": "Laravel: Optimize",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "optimize"
+        }
+    },
+    {
+        "caption": "Laravel: Serve",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "serve"
+        }
+    },
+    {
+        "caption": "Laravel: Up",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "up"
+        }
+    },
+    {
+        "caption": "Laravel: App:Name",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "app:name",
+            "fill_in": true,
+            "fill_in_lable": "Enter your desired namespace"
+        }
+    },
+    {
+        "caption": "Laravel: Auth:Clear Resets",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "auth:clear-resets"
+        }
+    },
+    {
+        "caption": "Laravel: Cache:Clear",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "cache:clear"
+        }
+    },
+    {
+        "caption": "Laravel: Cache:Table",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "cache:table"
+        }
+    },
+    {
+        "caption": "Laravel: Config:Cache",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "config:cache"
+        }
+    },
+    {
+        "caption": "Laravel: Config:Clear",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "config:clear"
+        }
+    },
+    {
+        "caption": "Laravel: DB:Seed",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "db:seed"
+        }
+    },
+    {
+        "caption": "Laravel: Event:Generate",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "event:generate"
+        }
+    },
+    {
+        "caption": "Laravel: Key:Generate",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "key:generate"
+        }
+    },
+    {
+        "caption": "Laravel: Migrate:Install",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "migrate:install"
+        }
+    },
+    {
+        "caption": "Laravel: Migrate:Fresh (Drop all tables and re-run all migrations)",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "migrate:fresh",
+        }
+    },
+    {
+        "caption": "Laravel: Migrate:Refresh (Reset and re-run all migrations)",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "migrate:refresh"
+        }
+    },
+    {
+        "caption": "Laravel: Migrate:Reset",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "migrate:reset"
+        }
+    },
+    {
+        "caption": "Laravel: Migrate:Rollback",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "migrate:rollback"
+        }
+    },
+    {
+        "caption": "Laravel: Migrate:Status",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "migrate:status"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:List Failed Jobs",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:failed"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Failed Table",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:failed-table"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Flush",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:flush"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Forget",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:flush",
+            "fill_in": true,
+            "fill_in_table": "Enter the ID of the failed job"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Listen",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:listen",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of connection"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Restart",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:restart"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Retry",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:retry"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Subscribe",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:subscribe",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of Iron.io queue and the URL to be subscribed"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Table",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:table"
+        }
+    },
+    {
+        "caption": "Laravel: Queue:Work",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "queue:work",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of connection"
+        }
+    },
+    {
+        "caption": "Laravel: Route:Cache",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "route:Cache"
+        }
+    },
+    {
+        "caption": "Laravel: Route:Clear",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "route:clear"
+        }
+    },
+    {
+        "caption": "Laravel: Route:List",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "route:list"
+        }
+    },
+    {
+        "caption": "Laravel: Schedule:Run",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "schedule:run"
+        }
+    },
+    {
+        "caption": "Laravel: Session:Table",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "session:table"
+        }
+    },
+    {
+        "caption": "Laravel: Vendor:Publish",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "vendor:publish",
+            "fill_in": true,
+            "fill_in_lable": "Enter the name of package"
+        }
+    },
+    {
+        "caption": "Laravel: View:Clear",
+        "command": "laravel5_artisan",
+        "args": {
+            "command": "view:clear"
+        }
+    }
 ]
